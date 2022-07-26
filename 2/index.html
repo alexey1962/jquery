@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="imgHolder" id="imgHolder">
+            <img src="./img/01.PNG" alt="Карта">
+
+            <div class="card-summary">
+                <div class="card-name"></div>
+                <div class="card-description" id="card-description"></div>
+                <div class="card-type" id="card-type"></div>
+                <h1>А также:</h1>
+                <div class="card-specs" id="card-specs"></div>
+                <div class="card-price" id="card-price"></div>
+                <div class="button">Купить</div>
+            </div>
+        </div>
+
+        <form id="cardForm">
+            <h4>Настрой для себя рубашку</h4>
+
+            <div class="row">
+                <div class="col-1-of-3 column">
+                    <h3>Добавить портрет героя</h3>
+                    <div class="form-block">
+                        <input type="radio" name="portret" id="deathwing" value="24000" checked>
+                        <label for="deathwing">Смертокрыл</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="portret" id="vaish" value="24000">
+                        <label for="vaish">Леди Вайш</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="portret" id="kheltuzad" value="24000">
+                        <label for="kheltuzad">Кел'тузад</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="portret" id="razdrazhatel" value="12000">
+                        <label for="razdrazhatel">Сэр Раздражатель</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="portret" id="medivh" value="12000">
+                        <label for="medivh">Медив</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="portret" id="lazul" value="24000">
+                        <label for="lazul">Мадам Лазул</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="portret" id="nzoth" value="24000">
+                        <label for="nzoth">Н'зот</label>
+                    </div>
+                    </div>
+
+                <div class="col-1-of-3 column">
+                    <h3>Добавить Паки</h3>
+                    <div class="form-block">
+                        <input type="radio" name="pack" id="onePack" value="100" checked>
+                        <label for="onePack">1 Пак</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="pack" id="twoPack" value="200">
+                        <label for="twoPack">2 Пака</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="pack" id="threePack" value="500">
+                        <label for="threePack">5 Паков</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="pack" id="fourPack" value="1000">
+                        <label for="fourPack">10 Паков</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="pack" id="fivePack" value="2000">
+                        <label for="fivePack">20 Паков</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="pack" id="sixPack" value="5000">
+                        <label for="sixPack">50 Паков</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="pack" id="sevenPack" value="7500">
+                        <label for="sevenPack">75 Паков</label>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3 column">
+                    <h3>Добавить золотую карту</h3>
+                    <div class="form-block">
+                        <input type="radio" name="GoldCard" id="leeroy" value="4000" checked>
+                        <label for="leeroy">Лирой Дженкинс</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="GoldCard" id="nozdormu" value="4000">
+                        <label for="nozdormu">Ноздорму</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="GoldCard" id="ragnaros" value="4000">
+                        <label for="ragnaros">Рагнарос</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="GoldCard" id="anubarak" value="4000">
+                        <label for="anubarak">Ануб'арак</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="GoldCard" id="tirion" value="4000">
+                        <label for="tirion">Тирион</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="GoldCard" id="lichking" value="4000">
+                        <label for="lichking">Король лич</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="GoldCard" id="doctorbum" value="4000">
+                        <label for="doctorbum">Доктор Бум</label>
+                    </div>
+                </div>
+            </div>
+                
+
+            <h4>Рубашка</h4>
+            <div class="colorsSelector" id="colorsSelector">
+                <div class="colorItem num1" data-img-path="./img/01.PNG" data-descrip="Рагнарос" data-type="Сезонная, мероприятия"></div>
+                <div class="colorItem num2" data-img-path="./img/02.PNG" data-descrip="Угощение Зимнего Покрова" data-type="Мероприятия"></div>
+                <div class="colorItem num3" data-img-path="./img/03.PNG" data-descrip="Наксрамас" data-type="Сезонная"></div>
+                <div class="colorItem num4" data-img-path="./img/04.PNG" data-descrip="Тортик" data-type="Сезонная"></div>
+                <div class="colorItem num5" data-img-path="./img/05.PNG" data-descrip="Магия Даларана" data-type="Сезонная"></div>
+                <div class="colorItem num6" data-img-path="./img/06.PNG" data-descrip="Тыквовин" data-type="Сезонная, мероприятия"></div>
+                <div class="colorItem num7" data-img-path="./img/07.PNG" data-descrip="Глаза К'туна" data-type="Предзаказ"></div>
+                <div class="colorItem num8" data-img-path="./img/08.PNG" data-descrip="Хватка Йогг-Сарона" data-type="Сезонные"></div>
+                <div class="colorItem num9" data-img-path="./img/09.PNG" data-descrip="Венок Зимнего Покрова" data-type="Мероприятия"></div>
+                <div class="colorItem num10" data-img-path="./img/10.PNG" data-descrip="Озарение" data-type="Сезонная"></div>
+                <div class="colorItem num11" data-img-path="./img/11.PNG" data-descrip="Любовная Лихорадка" data-type="Сезонная"></div>
+                <div class="colorItem num12" data-img-path="./img/12.PNG" data-descrip="Лунный Новый Год" data-type="Сезонная"></div>
+                <div class="colorItem num13" data-img-path="./img/13.png" data-descrip="Похищенный Гром" data-type="Предзаказ"></div>
+                <div class="colorItem num14" data-img-path="./img/14.png" data-descrip="Тралл" data-type="Сезонная"></div>
+                <div class="colorItem num15" data-img-path="./img/15.png" data-descrip="Громовой Утес" data-type="Сезонная"></div>
+                <div class="colorItem num16" data-img-path="./img/16.png" data-descrip="Прекрасный Цветок" data-type="Сезонная"></div>
+                <div class="colorItem num17" data-img-path="./img/17.png" data-descrip="Экзодар" data-type="Сезонная"></div>
+                <div class="colorItem num18" data-img-path="./img/18.png" data-descrip="Не Трогай Золото" data-type="Предзаказ"></div>
+                <div class="colorItem num19" data-img-path="./img/19.png" data-descrip="Гоблины" data-type="Сезонная"></div>
+                <div class="colorItem num20" data-img-path="./img/20.png" data-descrip="Кабал" data-type="Сезонная"></div>
+                <div class="colorItem num21" data-img-path="./img/21.png" data-descrip="Черное Копье" data-type="Сезонная"></div>
+                <div class="colorItem num22" data-img-path="./img/22.png" data-descrip="Пиццекамень" data-type="Сезонная"></div>
+                <div class="colorItem num23" data-img-path="./img/23.png" data-descrip="Блеск" data-type="Сезонная"></div>
+            </div>
+    </form>
+
+
+    <script src="./js/jquery-3.6.0.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</body>
+
+</html>
